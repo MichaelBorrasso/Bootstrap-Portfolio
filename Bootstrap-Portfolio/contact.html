@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Michael Borrasso</title>
+    <title>Contact | Michael Borrasso</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
+
+<!-- elements in this page, as a whole, increase insize, larger than "About" page -->
 
 <body>
     <div class="content">
@@ -36,20 +38,44 @@
         <div id="MainRow" class="row">
             <div id="MainAbout" class="col-md-6">
 
-                <div id="AboutMe" class="container">
+                <div id="contactBox" class="container">
                     <h2>
-                        <strong>About Me</strong>
+                        <strong>Contact</strong>
                     </h2>
                     <hr/>
-                    <img class="headshot " src="./assets/images/profile3.jpg " alt="Profile3 ">
-                    <div id="Bio" class="container"></div>
 
-                        <!-- I created this container (id="Bio") attempting to bring the <p> beneath and along side of the image, I may need to float the img left and clear the <p>-->
+                    <!-- Option for #contactBox -->
 
-                        <p> My Name is Michael Borrasso, I am originally from the Pocono Mountains. I went to Kutztown University,
-                            and received a BFA in Painting.However, I also studied Photography, Printmaking, Sculpture and
-                            Psychology. I am a huge fan of Music, and love to play the guitar.</p>
+                    <!-- <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </form> -->
+
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
                     </div>
+                    <div class="form-group">
+                        <label for="eml">Email:</label>
+                        <input type="email" class="form-control" id="eml">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="5" id="msg"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-default">Submit</button>
+                    <!-- Change btn-default background coolor to #4aaaa5 -->
+
                 </div>
             </div>
             <div id="socialSideline" class="col-md-6">
@@ -80,7 +106,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         &#169; 2018 Michael Borrasso
     </footer>
